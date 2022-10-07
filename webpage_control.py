@@ -8,10 +8,7 @@ app = Flask(__name__)
 
 def index():
 
-     if np.random.random() < 0.5: 
-         return render_template('pg_layout_red.html')
-     else:
-         return render_template('pg_layout_blue.html')
+        return render_template('pg_layout_blue.html')
 
 
 @app.route('/yes' , methods=['POST'])
@@ -46,4 +43,4 @@ def no_event():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5000)

@@ -6,12 +6,10 @@ app = Flask(__name__)
 
 @app.route('/')
 
+
 def index():
 
-     if np.random.random() < 0.5: 
-         return render_template('pg_layout_red.html')
-     else:
-         return render_template('pg_layout_blue.html')
+        return render_template('pg_layout_red.html')
 
 
 @app.route('/yes' , methods=['POST'])
@@ -20,7 +18,7 @@ def yes_event():
     df = pd.read_csv('data_experiment.csv')
     click = 1
     visit = 1
-    group = 'control'
+    group = 'treatment'
 
     df_raw = pd.DataFrame({'click' : click , 'visit': visit , 'group':group} , index=[0] )
 
@@ -35,7 +33,7 @@ def no_event():
     df = pd.read_csv('data_experiment.csv')
     click = 0
     visit = 1
-    group = 'control'
+    group = 'treatment'
 
     df_raw = pd.DataFrame({'click' : click , 'visit': visit , 'group':group} , index=[0])
 
@@ -46,4 +44,4 @@ def no_event():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port = 5001)

@@ -6,11 +6,11 @@ path_webdriver='/home/felipepedrosa/projetos/teste_bayesiana/chromedriver'
 driver = webdriver.Chrome(path_webdriver)
 
 
-driver.get('http://127.0.0.1:5000/')
+driver.get('http://127.0.0.1:5001/')
 
 clicks = 10000
 for click in range(clicks):
-    if np.random.random() < 0.3:
+    if np.random.random() < 0.4:
         driver.find_element('name' , 'yescheckbox').click()
         driver.find_element('id' , 'yesbtn').click()
         time.sleep(2)
