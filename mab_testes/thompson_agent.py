@@ -79,7 +79,9 @@ for episode in range(episodes):
         # plot
 
         reward_plot(success_array, failure_array)
+
         # agent - guarda recompensa
+        
         reward_array[bandit_machine] += reward
         bandit_array[bandit_machine] +=1
         accumulate_reward_array += reward
