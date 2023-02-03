@@ -1,5 +1,6 @@
 # Teste A/B Bayesiana
 
+
 ## 1. A empresa Electronic House
 
 A Electronic House é um comercio online ( e-commerce ) de produtos de informática
@@ -33,6 +34,18 @@ Os entregáveis do seu trabalho são os seguintes:
 atual?
  2. Qual o potencial de número de vendas que a nova página pode trazer?
  3. Qual o faturamento total na venda do teclado bluetooth através da nova página?
+
+## Diferença entre os testes A/B
+
+O teste A/B bayesiano possui diversas vantagens em relação a outros modos neste determinado desafio. Como podemos ver no desenho abaixo:
+
+![testeab_1](https://user-images.githubusercontent.com/55566708/216536937-8bf02489-6566-42be-90ba-1a75f228115d.jpg)
+
+O teste frequentista por todo a fase de testes envia páginas A para um determinado grupo e a B para outro numa taxa de 50% durante toda a duração do experimento. Assim sendo a página que te traz menos retorno irá ser muito enviada e por um tempo bem elevado fazendo com que o retorno financeiro seja menor. Já na Bayseana a transição é mais suave onde o algoritmo aprende em tempo real qual página tende a trazer mais retorno e suavemente vai substituindo a com baixo retorno.
+
+![testeab_2](https://user-images.githubusercontent.com/55566708/216536958-b479bf68-3815-4d2f-9a04-d9ca55fe9f7b.jpg)
+
+Por isso o teste A/B realizado foi a Baysiana.
 
 ## 3. Os dados
 
